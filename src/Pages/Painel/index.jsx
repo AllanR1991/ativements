@@ -27,7 +27,7 @@ const Painel = () => {
     }
 
     const filterAtivements = ( local ) => {
-        fetch("http://localhost:3000/ativos?local" + local)
+        fetch("http://localhost:3000/ativos?local=" + local)
         .then(response => response.json())
         .then(response=> {
             setListAtivements(response);
@@ -53,7 +53,7 @@ const Painel = () => {
 
             <Tabs places={places} selectedPlace={selectedPlace} setSelectedPlace={setSelectedPlace}/>
 
-            <Table/>
+            <Table listAtivements={listAtivements}/>
         </div>
     )
 }
