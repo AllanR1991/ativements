@@ -1,0 +1,74 @@
+{
+  "locais": [
+    {
+      "id": "sfsdafw443wtaergdsfgdgafads",
+      "nome": "Arena Cyber"
+    },
+    {
+      "id": "3523423jrhfdt4523234r234tgf",
+      "nome": "Sala 19"
+    }
+  ],
+  "ativos": [
+    {
+      "id": "9c8c23f8-fa0d-45dc-a726-c7cea963cb07",
+      "number": "32312314",
+      "name": "Mouse",
+      "locale": "Estoque 1",
+      "usuario_id": "24134051-1949-498c-9866-78a07d1a56f9",
+      "dataRegistro": "2024-09-11T12:14:26.722Z",
+      "status": true
+    },
+    {
+      "id": "4e8cdc36-e00f-4fe1-a2d2-0592d01a94b4",
+      "number": "32312314",
+      "name": "Mouse",
+      "locale": "Estoque 1",
+      "usuario_id": "24134051-1949-498c-9866-78a07d1a56f9",
+      "dataRegistro": "2024-09-11T12:14:33.726Z",
+      "status": true
+    },
+    {
+      "id": "44c061ab-3f00-4db1-822c-92685c1ca082",
+      "number": "32312314",
+      "name": "Mouse",
+      "locale": "Estoque 1",
+      "usuario_id": "24134051-1949-498c-9866-78a07d1a56f9",
+      "dataRegistro": "2024-09-11T12:14:33.940Z",
+      "status": true
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "6b9223fa-52ef-43ed-9956-80da7d80e58d",
+      "login": "teste",
+      "imagem": "https://avatars.githubusercontent.com/u/91613?v=4"
+    },
+    {
+      "id": "d613c9a2-4573-4d03-9970-68b40bf3a281",
+      "login": "luizhen527",
+      "imagem": "https://avatars.githubusercontent.com/u/125361452?v=4"
+    },
+    {
+      "id": "97fc9940-df79-4fb3-9e46-bf009e4bcd0c",
+      "login": "a",
+      "imagem": "https://avatars.githubusercontent.com/u/1410106?v=4"
+    },
+    {
+      "id": "88073d2e-097a-4baa-b487-f1dc84ea0c36",
+      "login": "lucas",
+      "imagem": "https://avatars.githubusercontent.com/u/1467716?v=4"
+    },
+    {
+      "id": "acc9b3f6-7871-4c85-9e22-32c3919df084",
+      "login": "lucas3",
+      "imagem": "https://avatars.githubusercontent.com/u/8303833?v=4"
+    },
+    {
+      "id": "24134051-1949-498c-9866-78a07d1a56f9",
+      "login": "allanr1991",
+      "imagem": "https://avatars.githubusercontent.com/u/22855740?v=4",
+      "ultimoAcesso": "2024-09-11T11:43:42.290Z"
+    }
+  ]
+}
