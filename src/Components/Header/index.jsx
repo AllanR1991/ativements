@@ -40,7 +40,7 @@ const Header = () => {
     <header className="w-full flex justify-between items-center py-5">
       <img src={logomarca} alt="Logo ativements" />
       <div className="flex justify-center items-center gap-5">
-        <a target="_blank" href={`https://github.com/${user.login}`}>
+        <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${user.login}`}>
           <img
             className="w-14 rounded"
             src={user.imagem}

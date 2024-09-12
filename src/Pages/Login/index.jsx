@@ -30,12 +30,12 @@ const Login = ({onLinking, setUser}) => {
             }else{
                 setMessage("Usuario nao encontrado, tente novamente");
             }
+            navigate("painel-ativos");
         })
         .catch(() => {
             setMessage("Nao foi possivel efetuar o login");
         })
 
-        navigate("painel-ativos");
 
         setLoad(false);
         setUserAccess("");

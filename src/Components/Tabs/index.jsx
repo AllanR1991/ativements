@@ -7,7 +7,7 @@ export const Tabs = ({ places, setSelectedPlace, selectedPlace }) => {
       {places.length ? (
         places.map((item, index) => {
           return (
-            <div key={index} className={ selectedPlace == item.id && 'border-b-2 border-primary-blue text-primary-blue transition-all'}>
+            <div key={index} className={ selectedPlace === item.id && 'border-b-2 border-primary-blue text-primary-blue transition-all'}>
               <a onClick={e => setSelectedPlace(item.id)} className="decoration-none p-5 w-[200px] text-xl text-center font-semibold cursor-pointer flex justify-center items-center">
                 {item.nome}
               </a>
