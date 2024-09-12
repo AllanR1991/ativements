@@ -1,22 +1,5 @@
 {
+  "ativos": [],
   "locais": [],
-  "ativos": [
-    {
-      "id": "9da86ad8-ba97-42c3-8d63-7f28bc5b246a",
-      "number": "1312564",
-      "name": "asdasdsad",
-      "locale": "dasda",
-      "usuario_id": "03121505-f5cf-4528-ba7d-c134e8841a01",
-      "dataRegistro": "12/09/2024, 11:35:44",
-      "status": true
-    }
-  ],
-  "usuarios": [
-    {
-      "id": "03121505-f5cf-4528-ba7d-c134e8841a01",
-      "login": "allanr1991",
-      "imagem": "https://avatars.githubusercontent.com/u/22855740?v=4",
-      "ultimoAcesso": "2024-09-12T14:29:02.337Z"
-    }
-  ]
+  "usuarios": []
 }

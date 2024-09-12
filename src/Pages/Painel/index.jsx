@@ -3,14 +3,14 @@ import Header from "../../Components/Header";
 import { FormAtivement } from "../../Components/Forms";
 import { Tabs } from "../../Components/Tabs";
 import { Table } from "../../Components/Table";
-import userEvent from "@testing-library/user-event";
+
 
 const Painel = () => {
 
-    const [selectedPlace, setSelectedPlace] = useState("");
+    const [ selectedPlace, setSelectedPlace] = useState("");
     const [ places, setPlaces] = useState([]);
     const [ listAtivements, setListAtivements] = useState([]);
-
+    const [update, setUpdate] = useState({});
     const getPlaces = () => {
         fetch("http://localhost:3000/locais")
         .then(response => response.json())
@@ -27,7 +27,7 @@ const Painel = () => {
     }
 
     const filterAtivements = ( local ) => {
-        fetch("http://localhost:3000/ativos?local=" + local)
+        fetch("http://localhost:3000/ativos?locale=" + local)
         .then(response => response.json())
         .then(response=> {
             setListAtivements(response);
@@ -43,17 +43,19 @@ const Painel = () => {
         }
     }, [])
 
-    useEffect(()=>{filterAtivements(selectedPlace)}, [selectedPlace]);
+    useEffect(()=>{
+        filterAtivements(selectedPlace)
+    }, [selectedPlace]);
 
     return (
         <div className='w-10/12 mx-auto my-0'>
             <Header/>
             
-            <FormAtivement/>
+            <FormAtivement places={places} setPlaces={setPlaces} setListAtivements={setListAtivements} list={listAtivements} update={update}/>
 
             <Tabs places={places} selectedPlace={selectedPlace} setSelectedPlace={setSelectedPlace}/>
 
-            <Table listAtivements={listAtivements}/>
+            <Table listAtivements={listAtivements.filter(x => x.locale === selectedPlace)} setList={setListAtivements} setUpdate={setUpdate} />
         </div>
     )
 }
