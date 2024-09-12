@@ -5,7 +5,10 @@ import { FormAccess } from "../../Components/Forms";
 import { useNavigate } from "react-router-dom";
 
 
-const Login = ({onLinking, setUser}) => {
+const Login = ({
+    onLinking, 
+    setUser
+}) => {
     const navigate = useNavigate();
 
     const [load, setLoad] = useState(false);
@@ -27,6 +30,7 @@ const Login = ({onLinking, setUser}) => {
                     login: response[0].login,
                     imagem: response[0].imagem
                 })
+                navigate("painel-ativos");
             }else{
                 setMessage("Usuario nao encontrado, tente novamente");
             }
@@ -35,7 +39,6 @@ const Login = ({onLinking, setUser}) => {
             setMessage("Nao foi possivel efetuar o login");
         })
 
-        navigate("painel-ativos");
 
         setLoad(false);
         setUserAccess("");
